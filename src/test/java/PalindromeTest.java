@@ -28,20 +28,14 @@ public class PalindromeTest {
     }
 
     @Test
-    public void testIsPalindromeWithNullString() {
-        String a = null;
-        assertEquals(true, palindrome.isPalindrome(a));
+    void isPalindromeOriginal_withNullString_shouldThrowNullPointerException() {
+        assertThrows(NullPointerException.class, () -> Palindrome.isPalindromeOriginal(null));
     }
-
 
     @Test
     public void testIsPalindromeWithNonPalindromeWord() {
         String nonPalindrome = "abcde";
-        assertEquals(true, palindrome.isPalindrome(nonPalindrome));
+        assertEquals(false, palindrome.isPalindrome(nonPalindrome));
     }
-
-
-
-
 
 }
