@@ -12,3 +12,7 @@
 ## Exercise 4:
 ### Probably it is better to throw an exception too when delta < 0
 ### Fours tests are sufficient
+## Exercise 5:
+### No other remarks
+## Exercise 6:
+### No other remarks
