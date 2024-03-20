@@ -43,6 +43,4 @@ public class AnagramTest {
         assertFalse(anagram.isAnagram("abcdef", "abcddddddd"));
     }
 
-
-
 }

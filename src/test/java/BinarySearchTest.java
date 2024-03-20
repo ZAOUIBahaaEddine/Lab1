@@ -36,7 +36,7 @@ public class BinarySearchTest {
     }
 
     @Test
-    void testBinarySearchElementNotInTheArray() {
+    void testElementNotInTheArray() {
         int[] array = {1, 2, 3, 4, 5};
         int element = 6;
         int index = BinarySearch.binarySearch(array, element);
@@ -44,16 +44,12 @@ public class BinarySearchTest {
     }
 
     @Test
-    void testBinarySearchVol2() {
+    void testMidofArrayGreaterThanElement() {
         // To Rename later
         int[] array = {1, 2, 3, 4, 5};
-        int element = 6;
+        int element = 2;
         int index = BinarySearch.binarySearch(array, element);
-        Assertions.assertEquals(-1, index);
+        Assertions.assertEquals(1, index);
     }
-
-
-
-
 }
 
