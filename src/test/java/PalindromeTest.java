@@ -29,7 +29,7 @@ public class PalindromeTest {
 
     @Test
     void isPalindromeOriginal_withNullString_shouldThrowNullPointerException() {
-        assertThrows(NullPointerException.class, () -> Palindrome.isPalindromeOriginal(null));
+        assertThrows(NullPointerException.class, () -> Palindrome.isPalindrome(null));
     }
 
     @Test
@@ -37,5 +37,7 @@ public class PalindromeTest {
         String nonPalindrome = "abcde";
         assertEquals(false, palindrome.isPalindrome(nonPalindrome));
     }
+
+
 
 }

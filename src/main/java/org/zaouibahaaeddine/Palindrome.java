@@ -1,6 +1,7 @@
 package org.zaouibahaaeddine;
 
 public class Palindrome {
+    /*
     public static boolean isPalindromeOriginal(String s) {
         if (s == null) {
             throw new NullPointerException("String must not be null");
@@ -17,6 +18,7 @@ public class Palindrome {
         }
         return true;
     }
+    */
 
 
     public static boolean isPalindrome(String s) {

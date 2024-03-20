@@ -1,0 +1,59 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.lang.reflect.Array;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.zaouibahaaeddine.Anagram;
+import org.zaouibahaaeddine.BinarySearch;
+
+
+
+public class BinarySearchTest {
+
+    private BinarySearch binarySearch;
+    @BeforeEach
+    void SetUp() {
+        binarySearch = new BinarySearch();
+    }
+
+
+
+    @Test
+    void testArrayIsNULL() {
+        Array a = null;
+        assertThrows(NullPointerException.class, () -> BinarySearch.binarySearch(null, 5));
+    }
+
+    @Test
+    void testBinarySearch() {
+        int[] array = {1, 2, 3, 4, 5};
+        int element = 3;
+        int index = BinarySearch.binarySearch(array, element);
+        Assertions.assertEquals(2, index);
+    }
+
+    @Test
+    void testBinarySearchElementNotInTheArray() {
+        int[] array = {1, 2, 3, 4, 5};
+        int element = 6;
+        int index = BinarySearch.binarySearch(array, element);
+        Assertions.assertEquals(-1, index);
+    }
+
+    @Test
+    void testBinarySearchVol2() {
+        // To Rename later
+        int[] array = {1, 2, 3, 4, 5};
+        int element = 6;
+        int index = BinarySearch.binarySearch(array, element);
+        Assertions.assertEquals(-1, index);
+    }
+
+
+
+
+}
+
