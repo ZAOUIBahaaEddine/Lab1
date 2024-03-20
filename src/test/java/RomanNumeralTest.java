@@ -25,33 +25,31 @@ public class RomanNumeralTest {
     }
 
     @Test
-    void testRomanNumeralCasual() {
+    void testRomanNumeralTen() {
         String expected = "X";
         String returned = RomanNumeral.toRoman(10);
         assertEquals(expected, returned);
     }
 
     @Test
-    void testRomanNumeralCasual2() {
+    void testRomanNumeralNine() {
         String expected = "IX";
         String returned = RomanNumeral.toRoman(9);
         assertEquals(expected, returned);
     }
 
     @Test
-    void testRomanNumeralCasual3() {
+    void testRomanNumeralEight() {
         String expected = "VIII";
         String returned = RomanNumeral.toRoman(8);
         assertEquals(expected, returned);
     }
 
     @Test
-    void testRomanNumeralCasual4() {
+    void testRomanNumeralFourteen() {
         String expected = "XIV";
         String returned = RomanNumeral.toRoman(14);
         assertEquals(expected, returned);
     }
-
-
 
 }
