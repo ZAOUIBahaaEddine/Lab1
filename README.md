@@ -9,3 +9,6 @@
 ### The correct one is the new: for (int i = 0; i < s1.length(); i++)
 ## Exercise 3:
 ### N.B. This method is wrong: The condition "while (low < high)" will be changed into while (low <= high) in order to consider the case low equals high
+## Exercise 4:
+### Probably it is better to throw an exception too when delta < 0
+### Fours tests are sufficient
