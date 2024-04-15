@@ -1,9 +1,11 @@
+package EXO3;
+
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.lang.reflect.Array;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.BinarySearch;
+import org.zaouibahaaeddine.EXO3.BinarySearch;
 
 public class BinarySearchTest {
 

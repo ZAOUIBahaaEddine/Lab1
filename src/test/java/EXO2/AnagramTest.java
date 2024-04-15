@@ -1,6 +1,8 @@
+package EXO2;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.Anagram;
+import org.zaouibahaaeddine.EXO2.Anagram;
 
 import static org.junit.jupiter.api.Assertions.*;
 

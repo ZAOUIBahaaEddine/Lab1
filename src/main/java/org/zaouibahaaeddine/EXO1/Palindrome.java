@@ -1,4 +1,4 @@
-package org.zaouibahaaeddine;
+package org.zaouibahaaeddine.EXO1;
 
 public class Palindrome {
     /*

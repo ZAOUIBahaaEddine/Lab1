@@ -1,6 +1,8 @@
+package EXO6;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.FizzBuzz;
+import org.zaouibahaaeddine.EXO6.FizzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 

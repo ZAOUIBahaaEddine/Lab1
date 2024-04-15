@@ -1,4 +1,4 @@
-package org.zaouibahaaeddine;
+package org.zaouibahaaeddine.EXO3;
 
 public class BinarySearch {
     /*

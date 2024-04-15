@@ -1,4 +1,4 @@
-package org.zaouibahaaeddine;
+package org.zaouibahaaeddine.EXO4;
 
 public class QuadraticEquation {
     public static double[] solve(double a, double b, double c) {

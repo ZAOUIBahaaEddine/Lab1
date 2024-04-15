@@ -1,4 +1,4 @@
-package org.zaouibahaaeddine;
+package org.zaouibahaaeddine.EXO2;
 
 public class Anagram {
     public static boolean isAnagram(String s1, String s2) {

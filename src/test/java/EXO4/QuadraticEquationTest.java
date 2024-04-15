@@ -1,6 +1,8 @@
+package EXO4;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.QuadraticEquation;
+import org.zaouibahaaeddine.EXO4.QuadraticEquation;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class QuadraticEquationTest {

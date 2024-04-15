@@ -1,8 +1,10 @@
+package EXO1;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.Palindrome;
+import org.zaouibahaaeddine.EXO1.Palindrome;
 
 
 
@@ -26,7 +28,7 @@ public class PalindromeTest {
     }
 
     @Test
-    void isPalindromeOriginal_withNullString_shouldThrowNullPointerException() {
+    void testIsPalindromeOriginalWithNullStringShouldThrowNullPointerException() {
         assertThrows(NullPointerException.class, () -> Palindrome.isPalindrome(null));
     }
 
@@ -35,7 +37,4 @@ public class PalindromeTest {
         String nonPalindrome = "abcde";
         assertEquals(false, palindrome.isPalindrome(nonPalindrome));
     }
-
-
-
 }

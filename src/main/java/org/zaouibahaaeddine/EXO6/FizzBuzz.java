@@ -1,4 +1,4 @@
-package org.zaouibahaaeddine;
+package org.zaouibahaaeddine.EXO6;
 import java.io.*;
 
 public class FizzBuzz {
