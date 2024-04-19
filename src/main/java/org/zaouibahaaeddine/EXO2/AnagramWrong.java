@@ -1,6 +1,6 @@
 package org.zaouibahaaeddine.EXO2;
 
-public class Anagram {
+public class AnagramWrong {
     public static boolean isAnagram(String s1, String s2) {
         if (s1 == null || s2 == null) {
             throw new NullPointerException("Strings must not be null");

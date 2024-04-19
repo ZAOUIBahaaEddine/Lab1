@@ -5,51 +5,51 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.EXO5.RomanNumeral;
+import org.zaouibahaaeddine.EXO5.RomanNumeralRight;
 
-public class RomanNumeralTest {
-    private RomanNumeral romanNumeral;
+public class RomanNumeralRightTest {
+    private RomanNumeralRight romanNumeralRight;
 
     @BeforeEach
     void SetUp() {
-        romanNumeral = new RomanNumeral();
+        romanNumeralRight = new RomanNumeralRight();
     }
 
     @Test
     void testRomanNumeralGreaterThan3999() {
-        assertThrows(IllegalArgumentException.class, () -> RomanNumeral.toRoman(564651));
+        assertThrows(IllegalArgumentException.class, () -> RomanNumeralRight.toRoman(564651));
     }
 
     @Test
     void testRomanNumeralLessThan1() {
-        assertThrows(IllegalArgumentException.class, () -> RomanNumeral.toRoman(-22135));
+        assertThrows(IllegalArgumentException.class, () -> RomanNumeralRight.toRoman(-22135));
     }
 
     @Test
     void testRomanNumeralTen() {
         String expected = "X";
-        String returned = RomanNumeral.toRoman(10);
+        String returned = RomanNumeralRight.toRoman(10);
         assertEquals(expected, returned);
     }
 
     @Test
     void testRomanNumeralNine() {
         String expected = "IX";
-        String returned = RomanNumeral.toRoman(9);
+        String returned = RomanNumeralRight.toRoman(9);
         assertEquals(expected, returned);
     }
 
     @Test
     void testRomanNumeralEight() {
         String expected = "VIII";
-        String returned = RomanNumeral.toRoman(8);
+        String returned = RomanNumeralRight.toRoman(8);
         assertEquals(expected, returned);
     }
 
     @Test
     void testRomanNumeralFourteen() {
         String expected = "XIV";
-        String returned = RomanNumeral.toRoman(14);
+        String returned = RomanNumeralRight.toRoman(14);
         assertEquals(expected, returned);
     }
 

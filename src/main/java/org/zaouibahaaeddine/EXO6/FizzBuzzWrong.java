@@ -1,7 +1,6 @@
 package org.zaouibahaaeddine.EXO6;
-import java.io.*;
 
-public class FizzBuzz {
+public class FizzBuzzWrong {
     public static String fizzBuzz(int n) {
         if (n <= 1) {
             throw new IllegalArgumentException("n must be positive");

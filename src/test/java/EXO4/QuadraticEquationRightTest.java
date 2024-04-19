@@ -2,16 +2,16 @@ package EXO4;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.EXO4.QuadraticEquation;
+import org.zaouibahaaeddine.EXO4.QuadraticEquationRight;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class QuadraticEquationTest {
+public class QuadraticEquationRightTest {
 
-    private QuadraticEquation quadraticEquation;
+    private QuadraticEquationRight quadraticEquationRight;
 
     @BeforeEach
     void SetUp() {
-        quadraticEquation = new QuadraticEquation();
+        quadraticEquationRight = new QuadraticEquationRight();
     }
 
     @Test
@@ -19,7 +19,7 @@ public class QuadraticEquationTest {
         double a = 0;
         double b = 2;
         double c = 3;
-        assertThrows(IllegalArgumentException.class, () -> QuadraticEquation.solve(a, b, c));
+        assertThrows(IllegalArgumentException.class, () -> QuadraticEquationRight.solve(a, b, c));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class QuadraticEquationTest {
         double a = 1;
         double b = 1;
         double c = 1;
-        double[] roots = QuadraticEquation.solve(a, b, c);
+        double[] roots = QuadraticEquationRight.solve(a, b, c);
         assertNull(roots);
     }
 
@@ -36,7 +36,7 @@ public class QuadraticEquationTest {
         double a = 1;
         double b = 2;
         double c = 1;
-        double[] roots = QuadraticEquation.solve(a, b, c);
+        double[] roots = QuadraticEquationRight.solve(a, b, c);
         assertArrayEquals(new double[]{-b / (2 * a)}, roots);
     }
 
@@ -45,7 +45,7 @@ public class QuadraticEquationTest {
         double a = 1;
         double b = 4;
         double c = 3;
-        double[] roots = QuadraticEquation.solve(a, b, c);
+        double[] roots = QuadraticEquationRight.solve(a, b, c);
         assertArrayEquals(new double[]{(-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a), (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a)}, roots);
     }
 

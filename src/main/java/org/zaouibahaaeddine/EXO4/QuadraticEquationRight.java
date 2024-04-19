@@ -1,6 +1,6 @@
 package org.zaouibahaaeddine.EXO4;
 
-public class QuadraticEquation {
+public class QuadraticEquationRight {
     public static double[] solve(double a, double b, double c) {
         if (a == 0) {
             throw new IllegalArgumentException("a must not be zero");

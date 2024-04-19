@@ -4,37 +4,37 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaaeddine.EXO1.Palindrome;
+import org.zaouibahaaeddine.EXO1.PalindromeRight;
 
 
 
-public class PalindromeTest {
+public class PalindromeRightTest {
 
-    private Palindrome palindrome;
+    private PalindromeRight palindromeRight;
     @BeforeEach
     void SetUp() {
-        palindrome = new Palindrome();
+        palindromeRight = new PalindromeRight();
     }
 
 
     @Test
     public void testIsPalindrome() {
-        assertEquals(true, palindrome.isPalindrome("abcdcba"));
+        assertEquals(true, palindromeRight.isPalindrome("abcdcba"));
     }
 
     @Test
     public void testIsPalindromeWithOneWord() {
-        assertEquals(true, palindrome.isPalindrome("aba"));
+        assertEquals(true, palindromeRight.isPalindrome("aba"));
     }
 
     @Test
     void testIsPalindromeOriginalWithNullStringShouldThrowNullPointerException() {
-        assertThrows(NullPointerException.class, () -> Palindrome.isPalindrome(null));
+        assertThrows(NullPointerException.class, () -> PalindromeRight.isPalindrome(null));
     }
 
     @Test
     public void testIsPalindromeWithNonPalindromeWord() {
         String nonPalindrome = "abcde";
-        assertEquals(false, palindrome.isPalindrome(nonPalindrome));
+        assertEquals(false, palindromeRight.isPalindrome(nonPalindrome));
     }
 }
