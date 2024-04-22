@@ -1,8 +1,7 @@
 # Lab 1:
 
 # N.B. 
-## For all the examples, one and only code for each example was sufficient to cover both the line/code coverage and the branch coverage.
-## That's why one and only code for each example was implemented.
+For all the examples, one and only code for each example was sufficient to cover both the line/code coverage and the branch coverage. That's why one and only code for each example was implemented.
 
 
 ### Exercise 1:
